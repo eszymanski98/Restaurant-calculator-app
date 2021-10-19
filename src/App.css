@@ -1,0 +1,238 @@
+.App {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: #C5E4E7;
+  font-family: "Andalé Mono", monospace;
+}
+
+.Header {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.half {
+  font-family: "Andalé Mono", monospace;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  font-size: large;
+  color: #00474B;
+}
+
+.Calc {
+  height: 100%;
+  width: 100%;
+  flex: 3 1 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Card {
+  flex: 0 1 auto;
+  border-radius: 15px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  height:fit-content;
+  box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.089);
+  flex-wrap:wrap;
+}
+
+.CalcHalf {
+  display: flex;
+  flex: 1 1 0;
+}
+
+.CalcHalfInner {
+  padding: 15px;
+  flex: 1 0 0;
+  display: flex;
+}
+
+.inpt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inpt-whole-input {
+  border-color: #69C5BB;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style:solid;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.error .inpt-whole-input {
+  border-color: #DB9585;
+}
+
+.inpt-icon {
+  color:grey;
+  padding-left:5px;
+  font-size:13px;
+}
+
+.inpt-input {
+  border:none;
+  outline:none;
+  font-size:19px;
+  font-family: "Andalé Mono", monospace;
+  font-weight: bold;
+  color:#0C4B4D;
+  text-align:right;
+  width:100%;
+  background-color: transparent;
+  padding:5px;
+  padding-right:10px;
+}
+
+.label{
+  font-family: "Andalé Mono", monospace;
+  font-size:12px;
+  color:#8B9999;
+  font-weight: bold;
+  padding-left:3px;
+  padding-bottom:9px;
+}
+
+.inpt-labels{
+  display:flex;
+  justify-content: space-between;
+}
+
+.errorStr{
+  font-family: "Andalé Mono", monospace;
+  font-size:12px;
+}
+
+.inpt-label{
+  font-family: "Andalé Mono", monospace;
+  font-size:12px;
+  color:#8B9999;
+  font-weight: bold;
+  padding-left:3px;
+  padding-bottom:5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error {
+  color: #DB9585;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:15px;
+  padding-left:25px;
+}
+
+.Tip{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.TipChoice{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10px;
+}
+
+.Perc{
+  border-radius: 5px;
+  background:#00474B;
+  text-align: center;
+  padding:8px;
+  color:white;
+  cursor:pointer;
+  font-family: "Andalé Mono", monospace;
+  font-weight: bold;
+}
+
+.Perc.Selected{
+  background:#9FE8DF;
+  color: #0C4B4D;
+}
+
+.Perc:hover{
+  background:#9FE8DF;
+  color: #0C4B4D;
+}
+
+.CustomTip{
+  min-width: 0;
+  outline:none;
+  border: 2px solid #69C5BB;
+  border-radius:6px;
+  font-family: "Andalé Mono", monospace;
+  text-align: right;
+  font-weight: bold;
+  font-size:20px;
+}
+
+.Summary {
+  border-radius: 10px;
+  background-color: #00474B;
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Total {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.perPerson {}
+
+.name {
+  color: white;
+  white-space: nowrap;
+}
+
+.per {
+  font-size: small;
+  color: #5d9a9e;
+  white-space: nowrap;
+}
+
+.Money {
+  font-weight: bolder;
+  font-size: 30px;
+  color: #25C2AD;
+}
+
+.Reset {
+  width: 100%;
+  font-family: "Andalé Mono", monospace;
+  font-size: medium;
+  font-weight: bold;
+  color: #00474B;
+  background: #9FE8DF;
+  border-radius: 5px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+}
